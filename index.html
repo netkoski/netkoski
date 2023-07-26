@@ -1,112 +1,43 @@
-<!DOCTYPE HTML>
-
-<html lang = "pl">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title> Fotografia </title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href = "index.css">	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Portfolio Fotograficzne</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> 
+<body class="index"> <!-- Dodaliśmy klasę "index" na stronie głównej -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li class="gallery-menu">
+          <a href="galeria.html">Galeria</a>
+          <ul>
+            <li><a href="galeria.html?category=black_and_white">Zdjęcia czarno-białe</a></li>
+            <li><a href="galeria.html?category=color">Zdjęcia kolorowe</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-	<header> 
-		<a href="index.html"> <img class="aparat1" src="img/aparat.png" title="kliknij, aby przeniesc sie na strone glowna" alt="aparat analogowy"> </a>
-		<h1 id="gora">FOTOGRAFIA</h1>
-		<img class="aparat2" src="img/aparat2.png" alt="aparat analogowy">
-	</header>
-	
-	<aside>
-	<h3> MENU </h3>
-			<ul>
-				<li><a class="active" href="index.html">STRONA GŁÓWNA</a></li>
-				<li><a href="kontakt.html">KONTAKT</a></li>					
-				<li><a href="galeria.html" >GALERIA ZDJĘĆ</a>
-					<ul>
-						<li><a href="galeria.html#zdjczb"> ZDJĘCIA CZARNO-BIAŁE </a></li>
-						<li><a href="galeria.html#zdjkolor"> ZDJĘCIA KOLOROWE </a></li>
-					</ul> 
-				</li>
-			</ul> 
-	</aside>
-	
-	<section>
-	
-	<h2 class="rodzaje">Rodzaje aparatów</h2>
-	<h4> APARAT KLASYCZNY (ANALOGOWY) </h4>
-	<h4 class="rok"> ROK WYNALEZIENIA - 12000 </h4>
-	<p>
-	Klasyczny aparat fotograficzny jest urządzeniem przystosowanym do naświetlania materiału światłoczułego.
-	Materiał ten umieszcza się wewnątrz aparatu, w postaci zwiniętej błony światłoczułej, 
-	która jest przewijana w jego wnętrzu za pomocą odpowiedniego mechanizmu, w celu
-	naświetlenia każdej z klatek filmu, lub też stosuje się 
-	wymienne klisze bądź kasety z błonami ciętymi, które na potrzeby każdego zdjęcia wymienia się na tylnej ścianie aparatu.<br>
-	Więcej informacji znajdziesz <a href="https://pl.wikipedia.org/wiki/Klasyczny_aparat_fotograficzny" target="_blank">tutaj.</a>
-	</p>
-	<a href="https://pl.wikipedia.org/wiki/Aparat_fotograficzny" target="_blank"><img id="aparat3" src="img/aparat3.png" alt="zdjęcie aparatu analogowego" ></a>	
-	<br>
-	<br>
-	<br>
-	<h4> APARAT CYFROWY </h4>
-	<h4 class="rok"> ROK WYNALEZIENIA - 1975 </h4>
-	<p>
-	Aparat cyfrowy to aparat fotograficzny rejestrujący obraz w postaci cyfrowej. Zapisuje obraz podobnie jak informacje zapisywane są w pamięci komputera. 
-	Jego zaletą jest to, że otrzymane zdjęcia mogą być w prosty sposób modyfikowane na komputerze, a następnie drukowane w dowolnej liczbie kopii.
-	Karty pamięci, stosowane w aparatach cyfrowych, jako nośnik danych, mogą pomieścić wielokrotnie więcej zdjęć niż błony fotograficzne, 
-	w związku z tym fotografowanie za pomocą aparatów cyfrowych jest znacznie tańsze i rzadko wymaga wymiany karty. Ponadto można wykonywać wiele próbnych zdjęć, a nieudane bez problemu i 
-	praktycznie bez kosztów usunąć.<br>
-	Więcej informacji znajdziesz <a href="https://pl.wikipedia.org/wiki/Cyfrowy_aparat_fotograficzny" target="_blank">tutaj.</a>
-	</p>
-	<img id="aparat4" src="img/aparat4.png" alt="zdjęcie aparatu cyfrowego">
-	<h2 class="rodzaje">Style fotografowania</h2>
-	<h4> Fotografia krajobrazowa </h4>
-	<p>
-	Fotografia skupiająca się na widoku otaczającej nas przyrody i miast, która przy tym nie koncentruje się na pokazaniu ludzi i ich aktywności.
-	</p>
-	<img id="rodzaj1" src="img/rodzaj1.jfif" alt="zdjęcie krajobrazu" >
-	<h4> Fotografia portretowa </h4>
-	<p>
-	Fotografia portretowa to sztuka uchwycenia osoby lub grupy osób, w której dominuje twarz, jej rysy i mimika.
-	</p>
-	<img id="rodzaj2" src="img/rodzaj2.jfif" alt="portret mężczyzny">
-	<h4> Fotografia socjologiczna </h4>
-	<p>
-	Fotografia socjologiczna polega na uchwyceniu za pomocą technik fotograficznych przestrzeni międzyludzkiej ujawniającej się w życiu codziennym. 
-	</p>
-	<img id="rodzaj3" src="img/rodzaj3.jpg" alt="zdjęcie zatłoczonych schodów">
-	<h4> Makrofotografia </h4>
-	<p>
-	W makrofotografii chodzi o zaprezentowanie obiektu większego niż w rzeczywistości — ekstremalnego zbliżenia czegoś małego.
-	</p>
-	<img id="rodzaj4" src="img/rodzaj4.jpg" alt="zdjęcie ważki w dużym przybliżeniu">
-	<br>
-	<br>
-	<br>
-	<p>
-	I wiele, wiele więcej, w koncu fotografia to sztuka i każdy może tworzyć swoje własne style i zdjęcia, nie wpisujące się w znane już standardy :)
-	</p>
-	<br>
-	
-	<table>
-    <tr>
-      <td>	
-		<a href="index.html#gora"><svg height="60" width="60">
-			<circle cx="30" cy="30" r="15" stroke="black" stroke-width="3" fill="cyan" />
-		</svg></a>
-	</td> 
-	<td><p>Kliknij, aby wrócić na górę strony</p></td> 
-    </tr>
-	</table>
+  <main>
+    <h1>Witaj na mojej stronie!</h1>
+    <p>Witaj na mojej stronie portfolio fotograficznego. Zapraszam do zapoznania się z moimi pracami.</p>
+    <div class="cta">
+      <a href="galeria.html">Zobacz galerię</a>
+    </div>
+  </main>
 
-	</section>
-	
-	<footer>
-		 Nikodem Netkowski s193335 
+  <footer>
+    <p>Wszelkie prawa zastrzeżone &copy; 2023</p>
+  </footer>
 
-	</footer>
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>

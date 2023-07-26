@@ -1,115 +1,52 @@
-<!DOCTYPE HTML>
-
-<html lang = "pl">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="UTF-8" >
-	<title> Kontakt </title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" > 
-	<link rel="stylesheet" href = "index.css" >	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> 
+<body class="subpage"> <!-- Dodaliśmy klasę "subpage" na podstronach -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li class="gallery-menu">
+          <a href="#">Galeria</a>
+          <ul>
+            <li><a href="galeria.html?category=black_and_white">Zdjęcia czarno-białe</a></li>
+            <li><a href="galeria.html?category=color">Zdjęcia kolorowe</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-	<header> 
-		<a href="index.html" > <img class="aparat1" src="img/aparat.png" title="kliknij, aby przeniesc sie na strone glowna" alt="aparat analogowy"> </a>
-		<h1 id="gora">KONTAKT</h1>
-		<img class="aparat2" src="img/aparat2.png" alt="aparat analogowy">
-	</header>
-	
-	<aside>
-	<h3> MENU </h3>
-			<ul>
-				<li><a href="index.html">STRONA GŁÓWNA</a></li>
-				<li><a class="active" href="kontakt.html">KONTAKT</a></li>					
-				<li><a href="galeria.html" >GALERIA ZDJĘĆ</a>
-					<ul>
-						<li><a href="galeria.html#zdjczb"> ZDJĘCIA CZARNO-BIAŁE </a></li>
-						<li><a href="galeria.html#zdjkolor"> ZDJĘCIA KOLOROWE </a></li>
-					</ul>
-				</li>
-			</ul> 
-	</aside>
-	
-	<section>
+  <main>
+    <h1>Kontakt</h1>
+    <p>Tutaj możesz podać swoje dane kontaktowe:</p>
+    <form action="mailto:nikodem.netkowski@gmail.com" method="POST" enctype=”text” name=”EmailForm” >
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="subject">Tytuł:</label>
+      <input type="text" id="subject" name="subject" required>
+      <label for="ContactCommentt">Wiadomość:</label>
+      <textarea id="ContactCommentt" name="ContactCommentt" rows="6" cols="10" required></textarea>
+	  <input type="submit" value="Send">
+      <button type="submit">Wyślij</button>
+    </form>
+  </main>
 
-	<h3 id="kontakt">Wypełnij formularz, aby się ze mną skontaktować </h3><br>
-	<form>
-	<p>PŁEĆ: 
-	<input type="radio" id="mężczyzna" name="płeć" value="mężczyzna">
-	<label for="mężczyzna">Mężczyzna</label>
-	<input type="radio" id="kobieta" name="płeć" value="kobieta">
-	<label for="kobieta">Kobieta</label>
-	</p>
-	<p>
-	<label for="imię"> IMIĘ: </label>
-	<input type="text" id="imię" name="imię">
-	</p>
-	<p>
-	<label for="nazwisko"> NAZWISKO: </label>	
-	<input type="text" id="nazwisko" name="imię">
-	</p>
-	<p>
-	<label for="urodziny">DATA URODZENIA: </label>
-	<input type="date" id="urodziny" name="urodziny">
-	</p>
-	<p>
-	<label for="email"> ADRES EMAIL: </label>	
-	<input id="email" type="email" name="email">
-	</p>
-	<p>
-	<label for="kolor">WYBIERZ TWÓJ ULUBIONY KOLOR:</label>
-	<input type="color" id="kolor" name="kolor" value="#0A4A6A">
-	</p>
-	<p>
-	<label for="sprawa">W JAKIEJ SPRAWIE PISZESZ?</label>
-		<select id="sprawa" name="sprawa">
-			<option value="współpraca" selected>Współpraca</option>
-			<option value="oferta" >Oferta reklamowa</option>
-			<option value="porady" >Porady</option>
-			<option value="sugestie" >Sugestie</option>
-		</select>
-	</p>
-	<p>
-	<label for="tytuł"> TYTUŁ WIADOMOŚCI: </label>
-	<br>
-	<input id="tytuł" name="tytuł">
-	</p>
-	<p>
-	<label for="wiadomość">TWOJA WIADOMOŚĆ:</label>
-	<br>
-	<textarea id="wiadomość" name="wiadomość" cols="50" rows="8"></textarea>
-	</p>
-	<table>
-    <tr>
-      <td>	
-		<input type="submit" value="Wyślij">
-	  </td> 
-	<td><input type="reset" value="Resetuj"></td> 
-    </tr>
-	</table>
-	
+  <footer>
+    <p>Wszelkie prawa zastrzeżone &copy; 2023</p>
+  </footer>
 
-	</form>
-	
-	<table>
-    <tr>
-      <td>	
-		<a href="kontakt.html#gora"><svg height="60" width="60">
-			<circle cx="30" cy="30" r="15" stroke="black" stroke-width="3" fill="cyan" />
-		</svg></a>
-	</td> 
-	<td><p>Kliknij, aby wrócić na górę strony</p></td> 
-    </tr>
-	</table>
-
-	</section>
-	
-	<footer>
-		Nikodem Netkowski s193335
-	</footer>
-	
+  <script src="scripts.js"></script>
 </body>
 
 </html>
