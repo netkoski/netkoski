@@ -129,19 +129,47 @@ main form button:hover {
   background-color: #ddd;
 }
 
+#sclsvg {
+	margin-right: 20px;
+	
+}
+
+
+#scl {
+
+	font-size: 30px;
+}
+
+#social {
+	display: flex;
+	align-items: center;
+	
+}
+
 /* Galeria zdjęć */
-.gallery {
-  display: flex;
+.galleryczb {
+    align: center;
+	width: 100%;
+	height: 1000px;
+
+}
+
+.gallerykol {
+    float: left;
+	width: 100%;
+	height: 900px;
+
 }
 
 .photo {
-  flex: 0 0 100%; /* Dodaliśmy tę regułę, aby zdjęcia zajmowały 20% szerokości ekranu */
+
   padding: 5px;
 }
 
 .photo img {
-  width: 50%;
-  height: auto;
+	height: 280px;
+	padding: 40px;
+  width: auto;
   transition: transform 0.3s ease;
 }
 
