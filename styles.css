@@ -131,26 +131,24 @@ main form button:hover {
 
 /* Galeria zdjęć */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ustawiamy grid z dynamicznymi kolumnami */
-  grid-gap: 10px; /* Dodajemy odstęp między kafelkami */
+  display: flex;
 }
 
 .photo {
-  flex: 0 0 20%; /* Dodaliśmy tę regułę, aby zdjęcia zajmowały 20% szerokości ekranu */
+  flex: 0 0 100%; /* Dodaliśmy tę regułę, aby zdjęcia zajmowały 20% szerokości ekranu */
   padding: 5px;
 }
 
 .photo img {
-  width: 100%;
+  width: 50%;
   height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 /* Dodaj efekt cienia na zdjęciach w galerii */
 .photo img:hover {
   transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
 }
 
 /* Responsywność */
