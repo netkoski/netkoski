@@ -200,6 +200,27 @@ main form button:hover {
   .gallery-menu:hover ul {
     display: block;
   }
+  .svg-icon {
+  width: 100px; /* Dostosuj szerokość */
+  height: 100px; /* Dostosuj wysokość */
+  fill: #000; /* Kolor wypełnienia */
+    margin-left: 0px;
+}
+.container-text {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left; /* Dodajemy wyrównanie do lewej */
+  margin-right: 0px;
+  font-size: 20px;
+}
+  .table-row {
+    flex-direction: column; /* Układ wertykalny dla małych ekranów */
+  }
+
+  .table-cell {
+    margin: 10px 0; /* Marginesy między rzędami */
+    text-align: center; /* Wyśrodkowanie tekstu na małych ekranach */
+  }
 }
 
 /* Kolor stopki */
