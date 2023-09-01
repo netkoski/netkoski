@@ -48,8 +48,12 @@ nav a {
 }
 
 main {
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Zmiana wyrównania na górę */
 }
+
 
 footer {
   background-color: #333;
@@ -206,13 +210,9 @@ main form button:hover {
   fill: #000; /* Kolor wypełnienia */
     margin-left: 0px;
 }
-.container-text {
-  margin-top: 10px;
-  font-weight: bold;
-  text-align: left; /* Dodajemy wyrównanie do lewej */
-  margin-right: 0px;
-  font-size: 20px;
-}
+  .container {
+    flex-basis: calc(50% - 20px); /* Zmniejszenie szerokości na telefonach */
+  }
   .table-row {
     flex-direction: column; /* Układ wertykalny dla małych ekranów */
   }
@@ -256,25 +256,24 @@ a:hover {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
+  flex-basis: calc(33.33% - 20px); /* 33.33% szerokości minus marginesy */
+  margin: 10px;
+  text-align: left; /* Wyrównanie tekstu do lewej strony */
+
 }
 
 .svg-icon {
   width: 100px; /* Dostosuj szerokość */
   height: 100px; /* Dostosuj wysokość */
   fill: #000; /* Kolor wypełnienia */
-    margin-left: 600px;
+    margin-right: 110%;
 }
 
 .container-text {
   margin-top: 10px;
   font-weight: bold;
-  text-align: left; /* Dodajemy wyrównanie do lewej */
-  margin-right: 600px;
-  font-size: 20px;
+
+  justify-content: center;
 }
 
 .table {
